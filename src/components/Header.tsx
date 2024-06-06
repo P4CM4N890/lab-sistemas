@@ -3,7 +3,7 @@ import img from '../assets/images/udg.webp';
 
 export const Header = () => {
   return (
-    <header className="w-full h-20 flex px-4 items-end justify-between sticky top-0 bg-white" >
+    <header className="w-full h-20 flex px-2 items-end justify-between sticky top-0 bg-white" >
 
       <div className="w-48 pb-2" >
         <img src={ img } alt="Logotipo de la Universidad de Guadalajara" />

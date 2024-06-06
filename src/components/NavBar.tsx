@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
 import { NavButton } from './NavButton';
-import { MenuIcon } from './svg/MenuIcon';
-import { CloseIcon } from './svg/CloseIcon';
+import { MenuIcon } from './icons/MenuIcon';
+import { CloseIcon } from './icons/CloseIcon';
 
 export const NavBar = ( ) => {
 

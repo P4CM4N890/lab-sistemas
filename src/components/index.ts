@@ -1,5 +1,5 @@
 export * from './Header';
 export * from './NavButton';
 export * from './NavBar';
-export * from './svg/MenuIcon';
-export * from './svg/CloseIcon';
+export * from './icons/MenuIcon';
+export * from './icons/CloseIcon';
