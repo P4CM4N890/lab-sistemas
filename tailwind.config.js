@@ -5,7 +5,20 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        
+      },
+      animation: {
+        header: 'header 1s ease-in-out infinite'
+      },
+      keyframes: {
+        header: {
+          '0%' : { transform: 'scale(1)' },
+          '100%': { transform: 'scale(0.8)' },
+        }
+      },
+    },
   },
   plugins: [],
 }
