@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useMenu } from '../hooks';
 
 import { NavButton } from './NavButton';
 import { MenuIcon } from './icons/MenuIcon';
@@ -6,13 +6,7 @@ import { CloseIcon } from './icons/CloseIcon';
 
 export const NavBar = ( ) => {
 
-    const [ isMenuActive, setIsMenuActive ] = useState( false );
-    
-    const activeClass = isMenuActive ? 'flex top-0 left-0' : 'hidden';
-
-    const toggleMenu = () => {
-        setIsMenuActive( !isMenuActive );
-    }
+    const { activeClass, toggleMenu } = useMenu();
 
     return (
         <nav className="w-fit flex flex-row" >
