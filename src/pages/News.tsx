@@ -1,5 +1,6 @@
 import { Card } from '../components/Card';
 import { Layout } from '../components';
+import { Entrances } from '../utils/Entrances';
 
 export const News = () => {
     return (
@@ -7,10 +8,11 @@ export const News = () => {
             
 
             <Layout>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
+                {
+                    Entrances.map((entrance) => (
+                        <Card key={entrance.id} entrance={entrance} />
+                    ))
+                }
             </Layout>
         </div>
     );
