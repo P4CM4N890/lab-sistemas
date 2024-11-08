@@ -9,7 +9,8 @@ const App = () => {
             <Routes>
                 <Route path='/' element={ <News/> } />
                 <Route path='/people' element={ <People/> } />
-                <Route path='/student-projects' element={ <StudentProjects/> } />
+                <Route path='/student-projects' element={ <StudentProjects/> } /> 
+                <Route path='/contact' element={ <Contact/> } /> 
                 <Route path='*' element={ <Navigate to='/' replace /> } />
             </Routes>
             <Footer/>
